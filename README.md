@@ -19,7 +19,7 @@ A React app that allows users to select a puppy from a list and view its details
 
 ## 🚀 Live Demo
 
-[Click here to view the app]()
+[Click here to view the app](https://puppypals-react.netlify.app/)
 
 ## Contact 📬
 
