@@ -11,9 +11,8 @@ function App() {
 
   return (
     <div className="App">
-      {/* conditionally renders when featPupId is truthy */}
       {featPupId && (
-        <div>
+        <div className="featured-pup">
           <h2>{featuredPup.name}</h2>
           <ul>
             <li>Age: {featuredPup.age}</li>
@@ -23,18 +22,17 @@ function App() {
       )}
 
       <h1>Puppy List</h1>
-      {puppies.map((puppy) => {
-        return (
+      <div className="puppy-list">
+        {puppies.map((puppy) => (
           <p
-            onClick={() => {
-              setFeatPupId(puppy.id);
-            }}
+            className="puppy-item"
+            onClick={() => setFeatPupId(puppy.id)}
             key={puppy.id}
           >
             {puppy.name}
           </p>
-        );
-      })}
+        ))}
+      </div>
     </div>
   );
 }

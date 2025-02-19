@@ -1,0 +1,48 @@
+.App {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.puppy-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.puppy-item {
+  background: #ffffff;
+  color: black;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 0;
+  cursor: pointer;
+  text-align: center;
+}
+
+.puppy-item:hover {
+  background: #f8f8f8;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.featured-pup {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 2rem;
+  margin: 2rem 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.featured-pup h2 {
+  margin-top: 0;
+}
+
+.featured-pup ul {
+  list-style: none;
+  padding: 0;
+}
+
+.featured-pup li {
+  padding: 0.5rem 0;
+}
